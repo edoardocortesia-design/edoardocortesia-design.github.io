@@ -27,7 +27,7 @@
   <h2>Cosa non fa</h2>
   <ul>
     <li>Non invia, non risponde, non inoltra, non cancella e non modifica mail, etichette o impostazioni.</li>
-    <li>Non vende, non cede e non condivide i dati con terzi.</li>
+    <li>Non vende e non cede i dati a nessuno.</li>
     <li>Non usa i dati per pubblicità né per addestrare modelli di intelligenza artificiale.</li>
   </ul>
 
@@ -35,6 +35,15 @@
   <p>Il testo delle mail viene letto sul computer del ristorante e non viene conservato: restano solo categoria, oggetto,
   importi, scadenze e un breve riassunto. Gli allegati utili (per esempio le fatture) vengono salvati sullo stesso
   computer. Le chiavi di accesso sono custodite nel portachiavi del sistema operativo.</p>
+
+  <h2>Classificazione con un servizio esterno (facoltativa)</h2>
+  <p>Di norma le mail sono lette solo da un modello di intelligenza artificiale installato sul computer del ristorante.
+  Se i titolari lo attivano (interruttore «NOS Posta»), il testo della mail viene prima ripulito sul computer:
+  nomi di persone e aziende sono sostituiti da codici, mentre indirizzi email, IBAN, codici fiscali, partite IVA,
+  numeri di telefono e link vengono tolti; se resta anche un solo dato di questo tipo la mail non viene inviata.
+  Il testo ripulito è inviato a fornitori di modelli linguistici, tramite un programma (FreeLLMAPI) che gira sullo
+  stesso computer, al solo scopo di classificarlo (categoria, importo, scadenza, riassunto). Gli allegati non vengono
+  mai inviati. Ogni testo inviato è registrato sul computer del ristorante.</p>
 
   <h2>Come revocare l'accesso</h2>
   <p>In qualsiasi momento da <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
